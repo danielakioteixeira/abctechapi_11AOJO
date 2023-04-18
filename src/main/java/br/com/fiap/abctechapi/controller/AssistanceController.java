@@ -1,6 +1,6 @@
 package br.com.fiap.abctechapi.controller;
 
-import br.com.fiap.abctechapi.application.dto.AssistDto;
+import br.com.fiap.abctechapi.application.dto.AssistResponseDto;
 import br.com.fiap.abctechapi.application.impl.AssistanceApplicationImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class AssistanceController {
     }
 
     @GetMapping
-    public ResponseEntity<List<AssistDto>> getAssists(){
+    public ResponseEntity<List<AssistResponseDto>> getAssists(){
         return ResponseEntity.ok(assistanceApplicationImpl.getAssists());
     }
 }

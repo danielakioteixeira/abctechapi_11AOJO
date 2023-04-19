@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Data
@@ -21,5 +21,5 @@ public class OrderLocation {
     @Column(name = "longitude")
     private Double longitude;
     @Column(name = "date")
-    private Date date;
+    private Timestamp date;
 }

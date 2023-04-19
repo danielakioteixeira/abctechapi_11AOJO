@@ -21,11 +21,11 @@ public class Order {
     @Column(name = "operator_id", nullable = false)
     private Long operatorId;
     @ManyToMany
-    private List<Assistance> assistances;
+    private List<Assistance> assists;
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "start_order_location_id", foreignKey = @ForeignKey(name = "FK_start_order_id"))
-    private OrderLocation startOrder;
+    private OrderLocation startOrderLocation;
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "end_order_location_id", foreignKey = @ForeignKey(name = "FK_end_order_id"))
-    private OrderLocation endOrder;
+    private OrderLocation endOrderLocation;
 }

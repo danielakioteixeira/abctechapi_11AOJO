@@ -6,12 +6,10 @@ import br.com.fiap.abctechapi.application.dto.OrderDto;
 import br.com.fiap.abctechapi.entity.Order;
 import br.com.fiap.abctechapi.entity.OrderLocation;
 import br.com.fiap.abctechapi.service.OrderService;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 @Component
 public class OrderApplicationImpl implements OrderApplication {

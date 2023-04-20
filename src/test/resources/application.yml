@@ -2,9 +2,12 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
 
   datasource:
     password:
     username: sa
     url: jdbc:h2:mem:abc_tech
+
+  flyway:
+    enabled: false

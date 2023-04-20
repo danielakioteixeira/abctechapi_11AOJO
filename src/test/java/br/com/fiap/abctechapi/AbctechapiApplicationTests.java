@@ -29,9 +29,7 @@ class AbctechapiApplicationTests{
 
 	@Test
 	void test_list_assistance(){
-		Mockito.when(assistanceRepository.findAll())
-				.thenReturn(
-						List.of(new Assistance(1L, "Test", "Test Description")));
+		Mockito.when(assistanceRepository.findAll()).thenReturn(List.of(new Assistance(1L, "Test", "Test Description")));
 		List<Assistance> list = assistanceService.getAssists();
 
 		Assertions.assertNotNull(list);

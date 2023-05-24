@@ -7,6 +7,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class AssistResponseDto {
     private Long id;
-    private String title;
+    private String name;
     private String description;
 }

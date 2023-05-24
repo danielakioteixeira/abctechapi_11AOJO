@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RequestMapping("/assists")
+@RequestMapping("/assistance")
 @RestController
 public class AssistanceController {
     private final AssistanceApplicationImpl assistanceApplicationImpl;
